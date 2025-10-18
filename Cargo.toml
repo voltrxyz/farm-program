@@ -1,0 +1,20 @@
+[package]
+name = "voltr-farm-program"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+
+[features]
+default = []
+
+[dependencies]
+pinocchio = "0.9.2"
+pinocchio-log = "0.5.1"
+pinocchio-system = "0.3.0"
+pinocchio-token = "0.4.0"
+pinocchio-associated-token-account = "0.2.0"
+pinocchio-pubkey = "0.3.0"
+voltr-vault = { path = "./crates/voltr-vault" }
+thiserror = { version = "1.0", default-features = false }
